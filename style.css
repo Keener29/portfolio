@@ -176,10 +176,20 @@ select {
 /* My code */
 
 /* sets everything in the code to no margins or padding */
+
+/* body {
+    background-color: #111;
+} */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+.backgroundImg {
+    width: 100%;
+    height: max-content;
+    background-image: url("images/spaceBackground.jpg");
 }
 
 main {
@@ -340,25 +350,60 @@ header nav ul li a {
 .cases-links {
     overflow: hidden;
     margin-bottom: 30px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .cases-links .case-link {
-    float: left;
     width: 250px;
     height: 485px;
     margin: 20px 41.6px;
     background-color: #e3e3e3;
     display: table;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cases-links h2 {
+#frc {
+    background-image: url("images/r2d2.webp");
+    background-position:30em;
+    background-size: cover;
+}
+
+#automation {
+    background-image: url("images/automation.jfif");
+    background-position:30em;
+    background-size: cover;
+}
+
+#galleryB {
+    background-image: url("images/galleryB.jfif");
+    background-position:90%;
+    background-size: cover;
+}
+
+#portfolioB {
+    background-image: url("images/portfolioB.jfif");
+    background-position:50%;
+    background-size: cover;
+}
+
+.subheaderB {
+    height:200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prjTitle {
+    padding: 20px 10px;
     font-family: Catamaran;
     font-size: 28px;
     color: #111;
-    text-align: center;
-    line-height: 100px;
     font-weight: 600;
     text-transform: uppercase;
+    background-color: whitesmoke;
 }
 
 .cases-links p {
@@ -366,11 +411,13 @@ header nav ul li a {
     font-size: 24px;
     color: #111;
     text-align: center;
-    line-height: 40px;
     font-weight: 600;
     text-transform: uppercase;
     display: table-cell;
     vertical-align: middle;
+    background-color: #e3e3e3;
+    width:100%;
+    padding: 10px 0px;
 }
 
 /* case */
@@ -430,31 +477,31 @@ header nav ul li a {
 }
 
 /* contact page */
-.contactBackground{
+.contactBackground {
     width: 100%;
     height: 420px;
     background-color: #e3e3e3;
 }
 
 
-.contactBackground h3{
+.contactBackground h3 {
     font-size: 22px;
     padding: 10px 0 10px 10px;
     float: left;
 }
 
-.contactBackground img{
-    width:50px;
+.contactBackground img {
+    width: 50px;
     padding: 5px;
     float: left;
 }
 
-.contactBackground ul{
+.contactBackground ul {
     padding: 50px 50px 0;
     text-align: center;
 }
 
-.contactBackground ul li{
+.contactBackground ul li {
     position: relative;
     display: inline-block;
     list-style: none;
@@ -463,28 +510,31 @@ header nav ul li a {
     align-items: center;
 }
 
-.contactBackground ul li a{
+.contactBackground ul li a {
     text-decoration: underline;
 }
 
-.contactBackground ul li img{
+.contactBackground ul li img {
     position: absolute;
     top: 35%;
-    left:5%;
+    left: 5%;
     width: 30px;
 }
+
 @media only screen and (max-width:415px) {
-    .contactBackground{
+    .contactBackground {
         height: 600px;
     }
-    .contactBackground ul li{
+
+    .contactBackground ul li {
         padding: 10px;
         line-height: 60px;
     }
-    .contactBackground ul li img{
+
+    .contactBackground ul li img {
         position: absolute;
         top: 26%;
-        left:-30px;
+        left: -30px;
     }
 }
 
