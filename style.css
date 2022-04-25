@@ -194,6 +194,8 @@ select {
 
 main {
     padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: #e3e3e3;
 }
 
 
@@ -296,10 +298,10 @@ header nav ul li a {
     font-size: 28px;
     color: #111;
     text-align: center;
-    font-style: italic;
     line-height: 40px;
     font-weight: 900;
     background-color: white;
+    outline:3px solid #111;
 }
 
 .index-links div {
@@ -307,6 +309,7 @@ header nav ul li a {
     width: calc(100% - 32px);
     height: 100px;
     background-color: #f2f2f2;
+    outline:5px solid #111;
 }
 
 .index-links div h3 {
@@ -319,31 +322,6 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-@media only screen and (min-width:1000px) {
-    .wrapper {
-        width: 1000px;
-        margin: 0 auto;
-    }
-
-    .index-banner {
-        height: 450px;
-    }
-
-    .index-banner h1 {
-        display: block;
-        width: 560px;
-        margin: 0 auto;
-    }
-
-    .index-links div {
-        margin: 10px 10px;
-    }
-
-    .index-boxlink-square {
-        display: inline-block;
-        width: calc(50% - 28px) !important;
-    }
-}
 
 /* Portfolio */
 
@@ -352,17 +330,18 @@ header nav ul li a {
     margin-bottom: 30px;
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .cases-links .case-link {
-    width: 250px;
+    width: 300px;
     height: 485px;
-    margin: 20px 41.6px;
-    background-color: #e3e3e3;
+    margin: 20px 0px;
     display: table;
     display:flex;
     align-items: center;
     justify-content: center;
+    outline:3px solid #111;
 }
 
 #frc {
@@ -404,6 +383,8 @@ header nav ul li a {
     font-weight: 600;
     text-transform: uppercase;
     background-color: whitesmoke;
+    outline:3px solid #111;
+    border-radius: 10px;
 }
 
 .cases-links p {
@@ -416,11 +397,20 @@ header nav ul li a {
     display: table-cell;
     vertical-align: middle;
     background-color: #e3e3e3;
-    width:100%;
+    border-radius: 30px;
+    width:90%;
     padding: 10px 0px;
+    outline:1px solid #111;
 }
 
+
 /* case */
+
+.line {
+    background-color:#111;
+    width: 100%;
+    height: 10px;
+}
 
 .case-vid h2 {
     font-family: Catamaran;
@@ -437,7 +427,7 @@ header nav ul li a {
     display: block;
     margin: 0 auto;
     padding: 30px 0;
-    width: 500px;
+    width: 100%;
 }
 
 .case-vid article h3 {
@@ -472,7 +462,7 @@ header nav ul li a {
 }
 
 .whitespace {
-    background-color: white;
+    background-color: #e3e3e3;
     height: 103px;
 }
 
@@ -480,7 +470,7 @@ header nav ul li a {
 .contactBackground {
     width: 100%;
     height: 420px;
-    background-color: #e3e3e3;
+    background-color: #aca7a7;
 }
 
 
@@ -538,9 +528,41 @@ header nav ul li a {
     }
 }
 
+@media only screen and (min-width:1275px) {
+    .wrapper {
+        width: 1275px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        height: 450px;
+    }
+
+    .index-banner h1 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+    }
+
+    .index-links div {
+        margin: 10px 10px;
+    }
+
+    .index-boxlink-square {
+        display: inline-block;
+        width: calc(50% - 28px) !important;
+    }
+    .cases-links {
+        justify-content: space-evenly;
+    }
+
+    .case-vid video {
+        width: 700px;
+    }
+}
+
 footer {
     width: 100%;
     padding: 40px 0;
-    margin-top: 20px;
     background-color: #111;
 }
