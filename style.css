@@ -471,8 +471,7 @@ header nav ul li a {
     width: 100%;
     height: calc(100vh - 300px);
     background-color: #aca7a7;
-    overflow: auto;
-    overflow-y: hidden;
+    overflow: scroll;
 }
 
 
@@ -489,7 +488,7 @@ header nav ul li a {
 }
 
 .contactBackground ul {
-    padding: 50px 50px 0;
+    padding: 70px 50px 0;
     text-align: center;
 }
 
