@@ -175,11 +175,12 @@ select {
 
 /* My code */
 
+body {
+    height: 100vh;
+}
+
 /* sets everything in the code to no margins or padding */
 
-/* body {
-    background-color: #111;
-} */
 * {
     margin: 0;
     padding: 0;
@@ -369,14 +370,14 @@ header nav ul li a {
 }
 
 .subheaderB {
-    height: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .prjTitle {
-    padding: 20px 10px;
+    padding: 10px 20px;
     font-family: Catamaran;
     font-size: 28px;
     color: #111;
@@ -399,7 +400,7 @@ header nav ul li a {
     background-color: #e3e3e3;
     border-radius: 30px;
     width: 90%;
-    padding: 10px 0px;
+    padding: 10px 10px;
     outline: 1px solid #111;
 }
 
@@ -407,6 +408,7 @@ header nav ul li a {
 /* case */
 
 .line {
+    position: fixed;
     background-color: #111;
     width: 100%;
     height: 10px;
@@ -417,7 +419,6 @@ header nav ul li a {
     font-size: 28px;
     color: #111;
     text-align: center;
-    line-height: 100px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
@@ -436,7 +437,7 @@ header nav ul li a {
     color: #111;
     font-weight: 600;
     text-transform: capitalize;
-    padding-bottom: 20px;
+    padding: 10px 20px;
 }
 
 .case-vid article div p {
@@ -445,20 +446,23 @@ header nav ul li a {
     color: #111;
     line-height: 24px;
     font-weight: 600;
-    column-count: 3;
-    column-gap: 20px;
+    padding: 20px;
     text-align: justify;
     text-indent: 25px;
 }
 
 .frontpage {
-    width: 800px;
-    margin: 20px 100px;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    outline: 3px solid #111
 }
 
 .frcImg {
-    width: 800px;
-    margin: 20px 100px;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    outline: 3px solid #111
 }
 
 .whitespace {
@@ -592,8 +596,16 @@ header nav ul li a {
         width: 500px;
     }
 
+    .frontpage {
+        width: 60%;
+    }
+
+    .frcImg {
+        width: 62%;
+    }
+
     #video-aboutMe {
-        margin:initial;
+        margin: initial;
     }
 
     .aboutSection {
