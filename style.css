@@ -195,7 +195,7 @@ body {
 
 main {
     padding-top: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     background-color: #e3e3e3;
 }
 
@@ -475,7 +475,7 @@ header nav ul li a {
     width: 100%;
     height: calc(100vh - 300px);
     background-color: #aca7a7;
-    overflow: scroll;
+    overflow: auto;
 }
 
 
@@ -625,5 +625,4 @@ footer {
     width: 100%;
     padding: 40px 0;
     background-color: #111;
-    bottom: 0;
 }
