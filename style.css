@@ -351,6 +351,12 @@ header nav ul li a {
     background-size: cover;
 }
 
+#iosDev {
+    background-image: url("images/iosDev.jpg");
+    background-position: 70%;
+    background-size: cover;
+}
+
 #automation {
     background-image: url("images/automation.jfif");
     background-position: 30em;
@@ -456,6 +462,12 @@ header nav ul li a {
     width: 80%;
     margin: 20px auto;
     outline: 3px solid #111
+}
+
+.rtx {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
 }
 
 .frcImg {
