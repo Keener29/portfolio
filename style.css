@@ -351,6 +351,12 @@ header nav ul li a {
     background-size: cover;
 }
 
+#rogersLogo {
+    background-image: url("images/rogersLogo.jpg");
+    background-position: 50%;
+    background-size: 400px;
+}
+
 #iosDev {
     background-image: url("images/iosDev.jpg");
     background-position: 70%;
@@ -467,6 +473,12 @@ header nav ul li a {
 .rtx {
     display: block;
     width: 30%;
+    margin: 20px auto;
+}
+
+.voronoiImage {
+    display: block;
+    width: 60%;
     margin: 20px auto;
 }
 
