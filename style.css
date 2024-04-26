@@ -350,6 +350,11 @@ header nav ul li a {
     background-position: 30em;
     background-size: cover;
 }
+#relayLogo {
+    background-image: url("images/relayLogo.jpg");
+    background-position: 50%;
+    background-size: 400px;
+}
 
 #rogersLogo {
     background-image: url("images/rogersLogo.jpg");
